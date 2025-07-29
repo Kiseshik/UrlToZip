@@ -138,7 +138,7 @@ func (tm *TaskManager) processTask(task *Task) {
 		task.Status = Failed
 	} else {
 		task.Status = Ready
-		task.Archive = "/tmp/" + task.ID + ".zip"
+		task.Archive = zipPath
 	}
 	task.Mu.Unlock()
 

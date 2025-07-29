@@ -12,6 +12,7 @@ func LoadConfig() Config {
 		AllowedExtensions: map[string]bool{
 			".pdf":  true,
 			".jpeg": true,
+			".jpg":  true,
 		},
 		MaxFilesPerTask: 3,
 		MaxActiveTasks:  3,

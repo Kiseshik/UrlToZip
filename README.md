@@ -23,6 +23,12 @@ go mod download
 go run cmd/main.go
 ```
 
+## API Endpoints
+- `POST /tasks` - Создать новую задачу
+- `POST /tasks/{id}/files` - Добавить файл в задачу
+- `GET /tasks/{id}` - Получить статус задачи
+- `GET /download/{filename}` - Скачать архив
+
 ## Ограничения
 - Максимум 3 активные задачи одновременно
 - Максимум 3 файла на задачу
